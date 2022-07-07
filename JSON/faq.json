@@ -1,0 +1,20 @@
+[
+        {
+            "titre":"Vous souhaitez parfaire vos connaissances en musculation ?",
+            "description":"Retrouvez dès à présent notre F.A.Q Training\nLe b. a.-ba de notre sport !!!",
+            "lien":"https://ecoledutigre.fr/training/",
+            "image":"https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg"
+        },
+        {
+            "titre":"Vous souhaitez vous lancer dans une sèche ou perdre du poids ?",
+            "description":"Retrouvez dès à présent notre F.A.Q Sèche\nEt atteignez tout objectifs !!!",
+            "lien":"https://ecoledutigre.fr/faq-seche/",
+            "image":"https://images.pexels.com/photos/6550823/pexels-photo-6550823.jpeg"
+        },
+        {
+            "titre":"Vous souhaitez prendre de la masse et devenir un titan ?",
+            "description":"Retrouvez dès à présent notre F.A.Q Prise de masse\nToutes les connaissances pour réussir !!!",
+            "lien":"https://ecoledutigre.fr/prise-de-masse/",
+            "image":"https://images.pexels.com/photos/1547248/pexels-photo-1547248.jpeg"
+        }
+    ]
