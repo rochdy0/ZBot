@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 var request = require('request');
-let twitchId = require('../Automatisations/twitch.json');
+let twitchId = require('../JSON/twitch.json');
 
 module.exports = {
     data: {

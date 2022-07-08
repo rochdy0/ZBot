@@ -1,104 +1,102 @@
-{
-    "articles": [
-        {
-            "titre": "TOUT SAVOIR SUR LA FENÊTRE ANABOLIQUE",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2021/04/pexels-tima-miroshnichenko-6388386-400x250.webp",
-            "lien": "https://ecoledutigre.fr/tout-savoir-sur-la-fenetre-anabolique/"
-        },
-        {
-            "titre": "SE LANCER DANS UNE PRISE DE MASSE",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2021/03/pexels-victor-freitas-791763-400x250.jpeg",
-            "lien": "https://ecoledutigre.fr/comment-se-lancer-dans-une-prise-de-masse/"
-        },
-        {
-            "titre": "LES COMPLÉMENTS ALIMENTAIRES",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2021/02/pexels-pixabay-208518-400x250.webp",
-            "lien": "https://ecoledutigre.fr/2478-2/"
-        },
-        {
-            "titre": "GLUCIDE ET CHARGE GLYCÉMIQUE",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2020/07/image0-400x250.png",
-            "lien": "https://ecoledutigre.fr/2466-2/"
-        },
-        {
-            "titre": "LES GLUCIDES",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2020/06/berry-close-up-cooking-delicious-141815-400x250.jpg",
-            "lien": "https://ecoledutigre.fr/les-glucides/"
-        },
-        {
-            "titre": "LES PROTÉINES",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2020/06/bbq-beef-chopping-board-close-up-618773-1-400x250.jpg",
-            "lien": "https://ecoledutigre.fr/les-proteines/"
-        },
-        {
-            "titre": "LE HOME GYM",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2022/03/pexels-max-vakhtbovych-7174396-400x250.webp",
-            "lien": "https://ecoledutigre.fr/le-home-gym/"
-        },
-        {
-            "titre": "PROGRESSER GRÂCE AU CARDIO",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2022/03/pexels-andrea-piacquadio-3764533-400x250.webp",
-            "lien": "https://ecoledutigre.fr/progresser-grace-au-cardio/"
-        },
-        {
-            "titre": "LES AUTOMASSAGES EN MUSCULATION",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2022/03/pexels-tima-miroshnichenko-6388978-1-400x250.jpeg",
-            "lien": "https://ecoledutigre.fr/les-automassages-en-musculation/"
-        },
-        {
-            "titre": "LA SURCHARGE PROGRESSIVE",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2020/09/Capture-de%CC%81cran-2020-09-30-a%CC%80-16.08.17-400x250.png",
-            "lien": "https://ecoledutigre.fr/la-surcharge-progressive/"
-        },
-        {
-            "titre": "MES 5 CONSEILS EN MUSCULATION",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2021/11/pexels-ivan-samkov-4162489-400x250.webp",
-            "lien": "https://ecoledutigre.fr/5-conseils-pour-bien-debuter-en-musculation/"
-        },
-        {
-            "titre": "PRODUITS DOPANTS : TÉMOIGNAGE",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2021/05/pexels-pixabay-159211-400x250.jpeg",
-            "lien": "https://ecoledutigre.fr/produits-dopants-temoignage-1-2/"
-        },
-        {
-            "titre": "TOUT SAVOIR SUR : LES PECTORAUX",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2021/01/pexels-pikx-by-panther-1547248-400x250.jpg",
-            "lien": "https://ecoledutigre.fr/tout-savoir-sur-les-pectoraux/"
-        },
-        {
-            "titre": "BARRES OU HALTÈRES ?",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2021/02/pexels-victor-freitas-931321-400x250.webp",
-            "lien": "https://ecoledutigre.fr/barres-ou-halteres/"
-        },
-        {
-            "titre": "LE SOMMEIL",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2020/11/pexels-kristin-vogt-57686-400x250.jpg",
-            "lien": "https://ecoledutigre.fr/2458-2/"
-        },
-        {
-            "titre": "COMMENT PROGRESSER EN MUSCULATION",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2020/11/pexels-victor-freitas-1092874-400x250.jpg",
-            "lien": "https://ecoledutigre.fr/2448-2/"
-        },
-        {
-            "titre": "LE CARDIO",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2020/11/pexels-nappy-936094-400x250.jpg",
-            "lien": "https://ecoledutigre.fr/2439-2/"
-        },
-        {
-            "titre": "ETIREMENTS ET ASSOUPLISSEMENTS",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2020/11/pexels-run-ffwpu-2640427-400x250.jpg",
-            "lien": "https://ecoledutigre.fr/2429-2/"
-        },
-        {
-            "titre": "L’ÉCHAUFFEMENT",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2020/11/pexels-cottonbro-4753892-400x250.jpg",
-            "lien": "https://ecoledutigre.fr/2423-2/"
-        },
-        {
-            "titre": "LES FORMATS D’ENTRAÎNEMENT",
-            "image": "https://ecoledutigre.fr/wp-content/uploads/2020/06/pexels-leon-martinez-1552242-400x250.jpg",
-            "lien": "https://ecoledutigre.fr/les-formats-dentrainement-en-musculation/"
-        }
-    ]
-}
+[
+    {
+        "titre": "TOUT SAVOIR SUR LA FENÊTRE ANABOLIQUE",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2021/04/pexels-tima-miroshnichenko-6388386-400x250.webp",
+        "lien": "https://ecoledutigre.fr/tout-savoir-sur-la-fenetre-anabolique/"
+    },
+    {
+        "titre": "SE LANCER DANS UNE PRISE DE MASSE",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2021/03/pexels-victor-freitas-791763-400x250.jpeg",
+        "lien": "https://ecoledutigre.fr/comment-se-lancer-dans-une-prise-de-masse/"
+    },
+    {
+        "titre": "LES COMPLÉMENTS ALIMENTAIRES",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2021/02/pexels-pixabay-208518-400x250.webp",
+        "lien": "https://ecoledutigre.fr/2478-2/"
+    },
+    {
+        "titre": "GLUCIDE ET CHARGE GLYCÉMIQUE",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2020/07/image0-400x250.png",
+        "lien": "https://ecoledutigre.fr/2466-2/"
+    },
+    {
+        "titre": "LES GLUCIDES",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2020/06/berry-close-up-cooking-delicious-141815-400x250.jpg",
+        "lien": "https://ecoledutigre.fr/les-glucides/"
+    },
+    {
+        "titre": "LES PROTÉINES",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2020/06/bbq-beef-chopping-board-close-up-618773-1-400x250.jpg",
+        "lien": "https://ecoledutigre.fr/les-proteines/"
+    },
+    {
+        "titre": "LE HOME GYM",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2022/03/pexels-max-vakhtbovych-7174396-400x250.webp",
+        "lien": "https://ecoledutigre.fr/le-home-gym/"
+    },
+    {
+        "titre": "PROGRESSER GRÂCE AU CARDIO",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2022/03/pexels-andrea-piacquadio-3764533-400x250.webp",
+        "lien": "https://ecoledutigre.fr/progresser-grace-au-cardio/"
+    },
+    {
+        "titre": "LES AUTOMASSAGES EN MUSCULATION",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2022/03/pexels-tima-miroshnichenko-6388978-1-400x250.jpeg",
+        "lien": "https://ecoledutigre.fr/les-automassages-en-musculation/"
+    },
+    {
+        "titre": "LA SURCHARGE PROGRESSIVE",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2020/09/Capture-de%CC%81cran-2020-09-30-a%CC%80-16.08.17-400x250.png",
+        "lien": "https://ecoledutigre.fr/la-surcharge-progressive/"
+    },
+    {
+        "titre": "MES 5 CONSEILS EN MUSCULATION",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2021/11/pexels-ivan-samkov-4162489-400x250.webp",
+        "lien": "https://ecoledutigre.fr/5-conseils-pour-bien-debuter-en-musculation/"
+    },
+    {
+        "titre": "PRODUITS DOPANTS : TÉMOIGNAGE",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2021/05/pexels-pixabay-159211-400x250.jpeg",
+        "lien": "https://ecoledutigre.fr/produits-dopants-temoignage-1-2/"
+    },
+    {
+        "titre": "TOUT SAVOIR SUR : LES PECTORAUX",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2021/01/pexels-pikx-by-panther-1547248-400x250.jpg",
+        "lien": "https://ecoledutigre.fr/tout-savoir-sur-les-pectoraux/"
+    },
+    {
+        "titre": "BARRES OU HALTÈRES ?",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2021/02/pexels-victor-freitas-931321-400x250.webp",
+        "lien": "https://ecoledutigre.fr/barres-ou-halteres/"
+    },
+    {
+        "titre": "LE SOMMEIL",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2020/11/pexels-kristin-vogt-57686-400x250.jpg",
+        "lien": "https://ecoledutigre.fr/2458-2/"
+    },
+    {
+        "titre": "COMMENT PROGRESSER EN MUSCULATION",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2020/11/pexels-victor-freitas-1092874-400x250.jpg",
+        "lien": "https://ecoledutigre.fr/2448-2/"
+    },
+    {
+        "titre": "LE CARDIO",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2020/11/pexels-nappy-936094-400x250.jpg",
+        "lien": "https://ecoledutigre.fr/2439-2/"
+    },
+    {
+        "titre": "ETIREMENTS ET ASSOUPLISSEMENTS",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2020/11/pexels-run-ffwpu-2640427-400x250.jpg",
+        "lien": "https://ecoledutigre.fr/2429-2/"
+    },
+    {
+        "titre": "L’ÉCHAUFFEMENT",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2020/11/pexels-cottonbro-4753892-400x250.jpg",
+        "lien": "https://ecoledutigre.fr/2423-2/"
+    },
+    {
+        "titre": "LES FORMATS D’ENTRAÎNEMENT",
+        "image": "https://ecoledutigre.fr/wp-content/uploads/2020/06/pexels-leon-martinez-1552242-400x250.jpg",
+        "lien": "https://ecoledutigre.fr/les-formats-dentrainement-en-musculation/"
+    }
+]

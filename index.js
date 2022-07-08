@@ -44,42 +44,42 @@ const rest = new REST({ version: '9' }).setToken(process.env.DISCORD_TOKEN);
 client.on("ready", async () => {
     console.log("ZBotV2 démaré, en attente de commandes ....")
     client.user.setStatus('dnd');
-    locjs.checkloca(client)
-    rolejs.checkrole(client)
-    setInterval(function() {require('./Automatisations/messagequestion.js').messagequestion(client, "question", "611706771668729858")}, 3600000);
-    setInterval(function() {require('./Automatisations/messagequestion.js').messagequestion(client, "question2", "875783142638759976")}, 3600000);
-    setInterval(function() {require('./Automatisations/messagequestion.js').messagequestion(client, "analyseprog", "926511016014139422")}, 3600000);
-    setInterval(function() {require('./Automatisations/messagequestion.js').messagequestion(client, "vosmedias", "906274946525843536")}, 3600000);
-    setInterval(function() {require('./Automatisations/membercount.js').membercount(Discord, client)}, 300000);
-    setInterval(function() {require('./Automatisations/twitch.js').twitchcount(client)}, 300000);
-    setInterval(function() {require('./Automatisations/twitch.js').twtoken()}, 7200000);
+    locjs.checkMessageLoca(client)
+    rolejs.checkMessageRole(client)
+    setInterval(function() {require('./Automatisations/messagequestion.js').messageQuestion(client, "question", "611706771668729858")}, 3600000);
+    setInterval(function() {require('./Automatisations/messagequestion.js').messageQuestion(client, "question2", "875783142638759976")}, 3600000);
+    setInterval(function() {require('./Automatisations/messagequestion.js').messageQuestion(client, "analyseprog", "926511016014139422")}, 3600000);
+    setInterval(function() {require('./Automatisations/messagequestion.js').messageQuestion(client, "vosmedias", "906274946525843536")}, 3600000);
+    setInterval(function() {require('./Automatisations/membercount.js').memberCounter(client)}, 300000);
+    setInterval(function() {require('./Automatisations/twitch.js').twitchCounter(client)}, 300000);
+    setInterval(function() {require('./Automatisations/twitch.js').twitchToken()}, 7200000);
     // schedule.scheduleJob({hour: 13, minute: 00}, () => {require("./Automatisations/journaldujour.js").jdj(client);});
 
-    schedule.scheduleJob({hour: 18, minute: 15}, () => {require('./Automatisations/don.js').don(Discord, client, '820968843429150720')});
-    schedule.scheduleJob({hour: 20, minute: 15}, () => {require('./Automatisations/don.js').don(Discord, client, '820968843429150720')});
-    schedule.scheduleJob({hour: 23, minute: 15}, () => {require('./Automatisations/don.js').don(Discord, client, '820968843429150720')});
-    schedule.scheduleJob({hour: 15, minute: 00}, () => {require('./Automatisations/don.js').don(Discord, client, '857303824024862750')});
-    schedule.scheduleJob({hour: 22, minute: 40}, () => {require('./Automatisations/don.js').don(Discord, client, '857303824024862750')});
-    schedule.scheduleJob({hour: 15, minute: 00}, () => {require('./Automatisations/don.js').don(Discord, client, '610931002868498435')});
+    schedule.scheduleJob({hour: 18, minute: 15}, () => {require('./Automatisations/don.js').don(client, '820968843429150720')});
+    schedule.scheduleJob({hour: 20, minute: 15}, () => {require('./Automatisations/don.js').don(client, '820968843429150720')});
+    schedule.scheduleJob({hour: 23, minute: 15}, () => {require('./Automatisations/don.js').don(client, '820968843429150720')});
+    schedule.scheduleJob({hour: 15, minute: 00}, () => {require('./Automatisations/don.js').don(client, '857303824024862750')});
+    schedule.scheduleJob({hour: 22, minute: 40}, () => {require('./Automatisations/don.js').don(client, '857303824024862750')});
+    schedule.scheduleJob({hour: 15, minute: 00}, () => {require('./Automatisations/don.js').don(client, '610931002868498435')});
 
-    schedule.scheduleJob({hour: 11, minute: 00}, () => {require('./Automatisations/topgg.js').topgg(Discord, client)});
-    schedule.scheduleJob({hour: 15, minute: 00}, () => {require('./Automatisations/topgg.js').topgg(Discord, client)});
-    schedule.scheduleJob({hour: 19, minute: 00}, () => {require('./Automatisations/topgg.js').topgg(Discord, client)});
-    schedule.scheduleJob({hour: 23, minute: 40}, () => {require('./Automatisations/topgg.js').topgg(Discord, client)});
+    schedule.scheduleJob({hour: 11, minute: 00}, () => {require('./Automatisations/topgg.js').topgg(client)});
+    schedule.scheduleJob({hour: 15, minute: 00}, () => {require('./Automatisations/topgg.js').topgg(client)});
+    schedule.scheduleJob({hour: 19, minute: 00}, () => {require('./Automatisations/topgg.js').topgg(client)});
+    schedule.scheduleJob({hour: 23, minute: 40}, () => {require('./Automatisations/topgg.js').topgg(client)});
 
-    schedule.scheduleJob({hour: 17, minute: 00}, () => {require('./Automatisations/article.js').article(Discord, client)});
-    schedule.scheduleJob({hour: 21, minute: 00}, () => {require('./Automatisations/article.js').article(Discord, client)});
+    schedule.scheduleJob({hour: 17, minute: 00}, () => {require('./Automatisations/article.js').article(client)});
+    schedule.scheduleJob({hour: 21, minute: 00}, () => {require('./Automatisations/article.js').article(client)});
     
-    schedule.scheduleJob({hour: 10, minute: 00}, () => {require('./Automatisations/faq.js').faq(Discord, client)});
-    schedule.scheduleJob({hour: 14, minute: 00}, () => {require('./Automatisations/faq.js').faq(Discord, client)});
-    schedule.scheduleJob({hour: 18, minute: 00}, () => {require('./Automatisations/faq.js').faq(Discord, client)});  
+    schedule.scheduleJob({hour: 10, minute: 00}, () => {require('./Automatisations/faq.js').faq(client)});
+    schedule.scheduleJob({hour: 14, minute: 00}, () => {require('./Automatisations/faq.js').faq(client)});
+    schedule.scheduleJob({hour: 18, minute: 00}, () => {require('./Automatisations/faq.js').faq(client)});  
 });
 
 
 
 client.on('interactionCreate', interaction => {
-    if (interaction.customId == "selectrole") rolejs.giverole(interaction, client);
-    else if (interaction.customId == "selectloca") locjs.giveloca(interaction, client);
+    if (interaction.customId == "selectrole") rolejs.giveRole(interaction, client);
+    else if (interaction.customId == "selectloca") locjs.giveLoca(interaction, client);
     else if (interaction.customId == "bk2") SlashCommands.bk2(interaction);
     else {SlashCommands[interaction.commandName](interaction, client)}
 });
@@ -105,7 +105,7 @@ client.on('messageCreate', function (message) {
         }
     }
     //Nouveaux guerrier
-    (message.member.roles.cache.has('747705073458610197')) ? require('./Automatisations/nouveau_guerrier.js').nouveauGuerrier(Discord, client, message) : null;
+    (message.member.roles.cache.has('747705073458610197')) ? require('./Automatisations/nouveau_guerrier.js').nouveauGuerrier(client, message) : null;
 });
 
 //Ping dans pour les nouveaux

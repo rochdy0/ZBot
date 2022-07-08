@@ -1,28 +1,28 @@
-const Discord = require('discord.js')
-const msgquestion = require('../JSON/msgquestion.json')
+'use strict';
+
+const messageQuestionJSON = require('../JSON/msgquestion.json')
 const fs = require('fs');
 
-function send(channel, chan)
-{
-    msgquestion[chan] ? channel.messages.fetch(msgquestion[chan]).then(msg => msg.delete()) : null
-    
-
-    const Embed = new Discord.MessageEmbed()
-        .setColor('#ffa600')
-        .setTitle('Message Automatique')
-    chan != 'vosmedias' ? Embed.setDescription('⚠️ Seuls les **coachs** et **approuvés** sont autorisés à répondre aux questions dans ce channel sous peine d\'une sanction ⚠️') : Embed.setDescription('⚠️ Pour rappel, ce salon sert uniquement à poster vos vidéos/photos à destination des réseaux sociaux de la communauté. Prière de ne pas discuter ici et de réagir via le salon <#610931002868498435> ⚠️');
-    channel.send({ embeds: [Embed] }).then(msg => {
-        msgquestion[chan] = msg.id;
-        let data = JSON.stringify(msgquestion);
-        fs.writeFileSync('/home/raspberry/ZBot/JSON/msgquestion.json', data);
+// Sends a message to the channel with the appropriate embed.
+function sendMessageQuestion(channel, channelName) {
+    messageQuestionJSON[channelName] ? channel.messages.fetch(messageQuestionJSON[channelName]).then(msg => msg.delete()) : null
+    const embed = {
+        color: 0xffa600,
+        title: 'Message Automatique',
+    }
+    embed.description = channelName !== 'vosmedias' ? '⚠️ Seuls les **coachs** et **approuvés** sont autorisés à répondre aux questions dans ce channel sous peine d\'une sanction ⚠️' : '⚠️ Pour rappel, ce salon sert uniquement à poster vos vidéos/photos à destination des réseaux sociaux de la communauté. Prière de ne pas discuter ici et de réagir via le salon <#610931002868498435> ⚠️';
+    channel.send({ embeds: [embed] }).then(msg => {
+        messageQuestionJSON[channelName] = msg.id;
+        fs.writeFileSync('/home/raspberry/ZBot/JSON/msgquestion.json', JSON.stringify(messageQuestionJSON));
     })
-}
+};
 
 
 module.exports = {
-    messagequestion: async function (client, chan, chanId) {
-        var target_chan = client.channels.resolve(chanId);
-        target_chan.messages.fetch({ limit: 1 }).then(msg => {
-            msg.first().id != msgquestion[chan] ? send(target_chan, chan, chanId) : null})
+    // Checks if the last message is sent by the ZBot, use sendMessageQuestion if not.
+    messageQuestion: function (client, channelName, channelId) {
+        let targetChannel = client.channels.resolve(channelId);
+        targetChannel.messages.fetch({ limit: 1 }).then(msg => {
+            msg.first().id !== messageQuestionJSON[channelName] ? sendMessageQuestion(targetChannel, channelName) : null})
     }
 }

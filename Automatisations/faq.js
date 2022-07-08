@@ -1,16 +1,20 @@
-const faqjson = require('../JSON/faq.json');
+'use strict';
+
+const faqJSON = require('../JSON/faq.json');
+const rnd = Math.floor(Math.random() * 3);
+const embed = {
+    color: 0xffa600,
+    title: `${faqJSON[rnd]['titre']} <:LogoEDT:901498744976056381>`,
+    url: faqJSON[rnd]["lien"],
+    description: faqJSON[rnd]['description'],
+    thumbnail: {
+        url: faqJSON[rnd]["image"]
+    }
+}
 
 module.exports = {
-    faq: function (Discord, client) {
-        const rnd = Math.floor(Math.random() * 3);
-        const Embed = new Discord.MessageEmbed()
-        .setColor('#ffa600')
-        .setTitle(faqjson[rnd]['titre'] + ' <:LogoEDT:901498744976056381>')
-        .setDescription(faqjson[rnd]['description'])
-        .setURL(faqjson[rnd]["lien"])
-        .setThumbnail(faqjson[rnd]["image"])
-    
-        var target_chan = client.channels.resolve('820968843429150720');
-        target_chan.send({ embeds: [Embed] }) 
+    // Sends the embed to the channel.
+    faq: function (client) {
+        client.channels.resolve('820968843429150720').send({ embeds: [embed] }) 
     }
 }

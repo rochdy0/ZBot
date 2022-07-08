@@ -1,10 +1,11 @@
 {
   "name": "zbot",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Bot Discord déstiné à être utilisé sur l'EDT",
   "main": "index.js",
   "scripts": {
-    "launch": "pm2 start index",
+    "start": "pm2 start index",
+    "stop": "pm2 stop index",
     "test": "node index.js"
   },
   "author": "Rochdy",

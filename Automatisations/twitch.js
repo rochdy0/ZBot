@@ -1,73 +1,38 @@
-var request = require('request');
-let twitchId = require('./twitch.json');
+'use strict';
+
+const request = require('request');
+const twitchIdJSON = require('../JSON/twitch.json');
 const fs = require('fs');
 
 module.exports = {
-    // twtokenapp: function () {
-    //     var options = {
-    //         url: 'https://id.twitch.tv/oauth2/token?client_id=hgqt99iww5m60ujmpb3hxucclb2zjs&client_secret=776exomjw87dkfv2133zx38wh00aka&grant_type=client_credentials',
-    //         method: 'POST'
-    //     };
-
-    //     function callback(error, response, body) {
-    //         if (!error && response.statusCode == 200) {
-    //             var body2 = JSON.parse(body);
-    //             twitchId['App-Token'] = body2.access_token
-    //             let data = JSON.stringify(twitchId);
-    //             fs.writeFileSync('twitch.json', data);
-    //             console.log(Date() + ' App Token Rafraichi')
-    //         }
-    //     }
-    //     request(options, callback);
-    // },
-    twtoken: function () {
-        var options = {
-            url: 'https://id.twitch.tv/oauth2/token?grant_type=refresh_token&refresh_token=' + twitchId['Refresh-User-Token'] + '&client_id=' + twitchId['Client-Id'] + '&client_secret=' + twitchId['Client-Secret'],
+    // Refresh the twitch user token used for the twitch counter and the subscribers's twitch list.
+    twitchToken: function () {
+        let options = {
+            url: `https://id.twitch.tv/oauth2/token?grant_type=refresh_token&refresh_token=${twitchIdJSON['Refresh-User-Token']}&client_id=${twitchIdJSON['Client-Id']}&client_secret=${twitchIdJSON['Client-Secret']}`,
             method: 'POST'
         };
-
-        function callback(error, response, body) {
-            if (!error && response.statusCode == 200) {
-                var body2 = JSON.parse(body);
-                twitchId['User-Token'] = body2.access_token
-                twitchId['Refresh-User-Token'] = body2.refresh_token
-                let data = JSON.stringify(twitchId);
-                fs.writeFileSync('/home/raspberry/ZBot/Automatisations/twitch.json', data);
+        request(options, function (error, response, body) {
+            if(!error && response.statusCode == 200){
+                body = JSON.parse(body)
+                [twitchIdJSON['User-Token'], twitchIdJSON['Refresh-User-Token']] = [body.access_token, body.refresh_token]
+                fs.writeFileSync('/home/raspberry/ZBot/JSON/twitch.json', JSON.stringify(twitchIdJSON))
                 console.log(Date() + ' Token Rafraichi')
             }
-            
-            else 
-            {
-                console.log('Err twtoken : ')
-                console.log(error)
-            }
-        }
-        request(options, callback);
+            else console.log('Err twcount\n' + body);
+        });
     },
-    twitchcount: function (client) {
-        var headers = {
-            'Authorization': 'Bearer '+ twitchId['User-Token'],
-            'Client-Id': twitchId['Client-Id']
-        };
-        
-        var options = {
+
+    // Gets the number of twitch's followers using API Request and update Discord channel.
+    twitchCounter: function (client) {
+        let options = {
             url: 'https://api.twitch.tv/helix/users/follows?to_id=150515266',
-            headers: headers
+            headers: {
+                'Authorization': `Bearer ${twitchIdJSON['User-Token']}`,
+                'Client-Id': twitchIdJSON['Client-Id']
+            }
         };
-        
-        function callback(error, response, body) {
-            if (!error && response.statusCode == 200) {
-                var body2 = JSON.parse(body);
-                var target_chan = client.channels.resolve('922649198694920233');
-                target_chan.setName(`🟣 Twitch : ${body2.total} Abos`)
-            }
-            else
-            {
-                console.log('Err twcount : ')
-                console.log(error)
-            }
-        }
-        
-        request(options, callback);
+        request(options, function (error, response, body) {
+            !error && response.statusCode == 200 ? client.channels.resolve('922649198694920233').setName(`🟣 Twitch : ${JSON.parse(body).total} Abos`) : console.log('Err twcount\n' + body);
+        });
     }
 }
