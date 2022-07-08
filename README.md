@@ -63,4 +63,4 @@ Ce dépôt GitHub servira à montrer le code source afin que les autres membres 
 [![Instagram](https://img.shields.io/badge/Instagram-20232A?style=for-the-badge&logo=instagram&logoColor=cd3778)](https://www.instagram.com/ecoledutigre/)
 [![tiktok](https://img.shields.io/badge/Tiktok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@ecoledutigre)
 [![website](https://img.shields.io/badge/Website-d26b29?style=for-the-badge&logo=google&logoColor=ffffff)](https://ecoledutigre.fr)
-[![twitch](https://img.shields.io/badge/Twitch-9146ff?style=for-the-badge&logo=twitch&logoColor=ffffff)](https://ecoledutigre.fr)
+[![twitch](https://img.shields.io/badge/Twitch-9146ff?style=for-the-badge&logo=twitch&logoColor=ffffff)](https://www.twitch.tv/radiotigre)
