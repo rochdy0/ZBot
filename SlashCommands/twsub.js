@@ -49,7 +49,7 @@ module.exports = {
                 Embed.setDescription(strdesc)
                 interaction.reply({ embeds: [Embed], components:[row] })
             }
-            else console.log(error, response, body)
+            else console.log(`Err twsub : ${body}`)
         }
         request(options, callback);
     }

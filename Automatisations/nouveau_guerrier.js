@@ -26,7 +26,7 @@ module.exports = {
                     const [dateNow, dateJoin] = [new Date(), new Date(row.date)]
                     const dateDiff = (Math.abs(dateNow.getTime() - dateJoin.getTime()) / (8.64 * 10**7))
                     if (row.count >= 300 && dateDiff >= 14) {
-                            console.log(`${row.username} : ${row.count}`)
+                            console.log(`Nouveau guerrier : ${row.id} : ${row.count}`)
                             message.member.roles.add("610959663865004050");
                             message.member.roles.remove("747705073458610197");
                             db.run(`DELETE FROM nouveau_guerrier WHERE id = ${message.author.id};`)

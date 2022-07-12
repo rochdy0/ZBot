@@ -14,7 +14,7 @@ module.exports = {
         request(options, function (error, response, body) {
             if(!error && response.statusCode == 200){
                 body = JSON.parse(body)
-                [twitchIdJSON['User-Token'], twitchIdJSON['Refresh-User-Token']] = [body.access_token, body.refresh_token]
+                twitchIdJSON['User-Token'] = body.access_token; twitchIdJSON['Refresh-User-Token'] = body.refresh_token;
                 fs.writeFileSync('/home/raspberry/ZBot/JSON/twitch.json', JSON.stringify(twitchIdJSON))
                 console.log(Date() + ' Token Rafraichi')
             }
